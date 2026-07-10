@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Destination Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 320px;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px gray;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px black;
+        }
+
+        .card::before {
+            content: "Travel Destination";
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(60, 60, 243);
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        button {
+            background: #1565C0;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0D47A1;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+
+        <img src="C:\Users\user\OneDrive\Pictures\swox6wjsl5ndvkv5jvum.jpg" alt="Paris">
+
+        <h2>Paris</h2>
+
+        <p>
+            Paris is the capital city of France, famous for the Eiffel Tower,
+            beautiful streets, delicious food, and rich culture.
+        </p>
+
+        <button>Visit</button>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        }
+
+        .container {
+            width: 450px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(78, 78, 244);
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .gender {
+            margin-bottom: 15px;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1565C0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0D47A1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>College Admission Form</h1>
+
+    <form>
+
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Father's Name</label>
+        <input type="text" placeholder="Enter father's name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Contact Number</label>
+        <input type="tel" placeholder="Enter contact number">
+
+        <label>Course Selection</label>
+        <select>
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>B.Sc Computer Science</option>
+            <option>B.Com</option>
+            <option>MCA</option>
+            <option>MBA</option>
+        </select>
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
