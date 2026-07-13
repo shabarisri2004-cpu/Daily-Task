@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Explorer</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navigation Bar */
+
+nav{
+    background:#3197fd;
+    padding:8px 20px;   /* Reduced navbar height */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+    font-size:22px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* Hero Section */
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200") no-repeat center;
+    background-size:cover;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero div{
+    position:relative;
+    z-index:1;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Heading */
+
+h2{
+    text-align:center;
+    margin:30px;
+    color:#1a6fcb;
+}
+
+/* Cards */
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.card h3{
+    margin:15px;
+    color:#333;
+}
+
+.card p{
+    margin:0 15px 20px;
+    color:#555;
+}
+
+.card h3::after{
+    content:" 🌍";
+    color:orange;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <h2>World Explorer</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+
+<div class="hero">
+    <div>
+        <h1>Adventure Begins Here</h1>
+        <p>Travel, Explore and Create Unforgettable Memories</p>
+    </div>
+</div>
+
+<!-- Destinations -->
+
+<h2>Popular Destinations</h2>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400" alt="Japan">
+        <h3>Japan</h3>
+        <p>Discover cherry blossoms, historic temples, and the vibrant city life of Tokyo.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400" alt="Santorini">
+        <h3>Santorini</h3>
+        <p>Enjoy stunning sunsets, white houses, and crystal-clear blue waters in Greece.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="Dubai">
+        <h3>Dubai</h3>
+        <p>Experience luxury shopping, modern skyscrapers, and exciting desert adventures.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
